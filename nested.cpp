@@ -2,23 +2,23 @@
 using namespace std;
 
 int main() {
-    int number;
+    int x;
 
-    cout << "Enter a number: ";
-    cin >> number;
+    cout << "Enter x: ";
+    cin >> x;
 
-    if (number > 0) {
-        cout << "The number is positive." << endl;
-        // Nested if to check even or odd
-        if (number % 2 == 0) {
+    if (x > 0) {
+        cout << "x is positive." << endl;
+        
+        if (x % 2 == 0) {
             cout << "It is also even." << endl;
         } else {
             cout << "It is also odd." << endl;
         }
-    } else if (number < 0) {
-        cout << "The number is negative." << endl;
+    } else if (x < 0) {
+        cout << "x is negative." << endl;
     } else {
-        cout << "The number is zero." << endl;
+        cout << "x is zero." << endl;
     }
 
     return 0;
